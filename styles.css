@@ -5,6 +5,8 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-position: center;
+  overflow: hidden;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -21,22 +23,33 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  background-image: url('Photos/peach.png');
+  height: 150px;
+  width: 150px;
   position:absolute;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 .mario{
-  border:15px solid yellow;
-  border-radius:20px;
-  height: 20px;
-  width: 20px;
+  background-image: url('Photos/mario.png');
+  height: 150px;
+  width: 150px;
   position:absolute;
+  background-position: center;
+  background-repeat: no-repeat; 
 }
-.luigi{
-  border:2px solid black;
-  border-radius:5px;
-  height: 100px;
-  width: 40px;
-  background-color: green;
-  position:absolute;
+.bowser{
+  background-image: url('Photos/bowser.png');
+  height: 150px;
+  width:156px;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+.rotate{
+  transform: rotateY(360deg);
+  transition: 1s;
+}
+.spin{
+  transform: rotate(-1080deg);
+  transition: .5s;
 }

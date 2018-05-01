@@ -11,11 +11,5 @@ SpinningDancer.prototype.constructor = SpinningDancer;
 SpinningDancer.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
 
-  this.$node.slideToggle( "slow", function() {} );
-  this.$node.animate({
-    width: '25%'
-  });
-  this.$node.animate({
-    width: '-25%'
-  });
+  this.$node.toggleClass('spin');
 };
