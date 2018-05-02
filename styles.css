@@ -6,6 +6,7 @@ body{
   background-color:#444;
   font-size: 18px;
   background-position: center;
+  resize: horizontal;
   overflow: hidden;
 }
 body, a:link, a:visited, a:active{
