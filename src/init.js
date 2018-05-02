@@ -26,11 +26,24 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
+    console.log(window.dancers[0]);
   });
-
   $('.lineUpButton').click(function() {
+    $('.dancer').animate({top:650},1000);  
     $('.mario').animate({top:650},1000);
     $('.bowser').animate({top:650},1000);
-    $('.dancer').animate({top:650},1000);  
-  });  
+  }); 
+ 
+  $('.groupUpButton').click(function() {
+    $('.dancer').animate({left:100},1000);  
+    $('.mario').animate({left:600},1000);
+    $('.bowser').animate({left:1100},1000);
+  }); 
+
+  $('.dancer').mouseover(function(){
+    $('.dancer').toggleClass('spin');
+  })
+  //iterate over our dancers array
+  //if a dancer is close to another dancer,
+    //
 });

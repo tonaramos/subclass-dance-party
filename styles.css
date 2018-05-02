@@ -46,10 +46,22 @@ body, a:link, a:visited, a:active{
   background-position: center; 
 }
 .rotate{
-  transform: rotateY(360deg);
+  transform: rotateY(720deg);
   transition: 1s;
 }
 .spin{
   transform: rotate(-1080deg);
   transition: .5s;
+}
+.dancer:hover{
+  transform: scale(2.5);
+}
+.mario:hover {
+  transform: scale(2.5);
+}
+.bowser:hover {
+  transform: scale(2.5); 
+}
+.bones {
+  background-image: url('Photos/bones.png');
 }
